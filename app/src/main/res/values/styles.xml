@@ -2,15 +2,14 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="windowActionModeOverlay">true</item>
     </style>
 
     <style name="DrawerActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#2196F3</item>
-        <item name="colorPrimaryDark">#1565C0</item>
-
-        <!--<item name="windowActionModeOverlay">true</item>-->
-
+        <item name="windowActionModeOverlay">true</item>
 
     </style>
 

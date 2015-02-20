@@ -14,6 +14,7 @@ import android.widget.Button;
 public class MainActivity extends ActionBarActivity {
 
     private Button btnDrawerActivity;
+    private Button btnTabNaviActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,17 @@ public class MainActivity extends ActionBarActivity {
 //        actionBar.setHomeButtonEnabled(true);
 
         btnDrawerActivity = (Button)findViewById(R.id.btn_drawer_activity);
-
         btnDrawerActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), DrawerActivity.class));
+            }
+        });
+        btnTabNaviActivity = (Button)findViewById(R.id.btn_tab_navi_activity);
+        btnTabNaviActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), NaviTabActivity.class));
             }
         });
     }

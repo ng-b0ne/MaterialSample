@@ -14,18 +14,36 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"/>
-    <Button
-        android:id="@+id/btn_drawer_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DrawerActivity"
-        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <Button
+            android:id="@+id/btn_drawer_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DrawerActivity1"
+            />
+        <Button
 
-    <Button
-        android:id="@+id/btn_unn_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="__Activity"
-        />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DrawerActivity2"
+            />
+
+        <Button
+            android:id="@+id/btn_tab_navi_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TabNavigation" />
+
+        <Button
+            android:id="@+id/btn_unn_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="__Activity"
+            />
+    </LinearLayout>
 
 </LinearLayout>
