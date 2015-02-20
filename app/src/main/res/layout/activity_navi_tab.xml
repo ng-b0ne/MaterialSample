@@ -14,15 +14,13 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"/>
 
-
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="40dp"
         android:background="?attr/colorPrimary"
         android:textColorPrimary="#FFF"
-        app:pstsPaddingMiddle="true" />
-
+        />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

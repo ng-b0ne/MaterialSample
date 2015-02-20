@@ -20,7 +20,7 @@
         <activity
             android:theme="@style/DrawerActivityTheme"
             android:name=".DrawerActivity" />
-        <activity android:name=".NaviTabActivity" />
+        <activity android:name=".TabNaviActivity" />
     </application>
 
 </manifest>

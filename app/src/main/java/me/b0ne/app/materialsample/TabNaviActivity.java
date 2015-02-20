@@ -5,8 +5,10 @@ import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
@@ -14,7 +16,7 @@ import com.astuetz.PagerSlidingTabStrip;
 /**
  * Created by b0ne on 2015/02/20.
  */
-public class NaviTabActivity extends ActionBarActivity {
+public class TabNaviActivity extends ActionBarActivity {
 
     private MyPagerAdapter adapter;
     private PagerSlidingTabStrip tabs;
@@ -27,6 +29,9 @@ public class NaviTabActivity extends ActionBarActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Tab Navigation");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         tabs = (PagerSlidingTabStrip)findViewById(R.id.tabs);
         pager = (ViewPager)findViewById(R.id.pager);
@@ -41,9 +46,20 @@ public class NaviTabActivity extends ActionBarActivity {
         tabs.setOnTabReselectedListener(new PagerSlidingTabStrip.OnTabReselectedListener() {
             @Override
             public void onTabReselected(int position) {
-                Toast.makeText(NaviTabActivity.this, "Tab reselected: " + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TabNaviActivity.this, "Tab reselected: " + position, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        switch (itemId) {
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public class MyPagerAdapter extends FragmentPagerAdapter {

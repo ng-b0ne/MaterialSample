@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
         btnTabNaviActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), NaviTabActivity.class));
+                startActivity(new Intent(getApplicationContext(), TabNaviActivity.class));
             }
         });
     }
