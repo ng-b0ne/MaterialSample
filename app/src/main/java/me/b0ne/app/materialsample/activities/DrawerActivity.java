@@ -1,4 +1,4 @@
-package me.b0ne.app.materialsample;
+package me.b0ne.app.materialsample.activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import me.b0ne.app.materialsample.R;
 
 /**
  * Created by b0ne on 2015/02/19.

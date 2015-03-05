@@ -1,10 +1,12 @@
-package me.b0ne.app.materialsample;
+package me.b0ne.app.materialsample.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import me.b0ne.app.materialsample.R;
 
 /**
  * Created by b0ne on 2015/02/20.

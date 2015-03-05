@@ -1,4 +1,4 @@
-package me.b0ne.app.materialsample;
+package me.b0ne.app.materialsample.activities;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -12,6 +12,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
+
+import me.b0ne.app.materialsample.R;
+import me.b0ne.app.materialsample.fragments.NaviContentFragment;
 
 /**
  * Created by b0ne on 2015/02/20.

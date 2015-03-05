@@ -1,4 +1,4 @@
-package me.b0ne.app.materialsample;
+package me.b0ne.app.materialsample.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import me.b0ne.app.materialsample.R;
+import me.b0ne.app.materialsample.adapters.MainListAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
