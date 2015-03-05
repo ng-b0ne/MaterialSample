@@ -27,18 +27,23 @@
             />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:id="@+id/drawer_content_layout"
-        android:orientation="vertical"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@android:color/white"
-        android:fitsSystemWindows="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Drawer menu...."/>
-    </LinearLayout>
+        android:background="@android:color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/material_bg_01"/>
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.v4.widget.DrawerLayout>
