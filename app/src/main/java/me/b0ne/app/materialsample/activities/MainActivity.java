@@ -52,7 +52,8 @@ public class MainActivity extends ActionBarActivity {
                     intent = new Intent(getApplicationContext(), TabNaviActivity.class);
                     break;
                 case 3:
-                    return;
+                    intent = new Intent(getApplicationContext(), FABActivity.class);
+                    break;
             }
             startActivity(intent);
         }

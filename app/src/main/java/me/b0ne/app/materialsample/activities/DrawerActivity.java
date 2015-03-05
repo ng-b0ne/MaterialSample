@@ -36,6 +36,7 @@ public class DrawerActivity extends ActionBarActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
+        actionBar.setTitle("Drawer Layout");
 
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         mDrawerToggle = new ActionBarDrawerToggle(this,

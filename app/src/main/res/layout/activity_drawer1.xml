@@ -12,7 +12,7 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:paddingTop="@dimen/status_bar_height"
-        app:elevation="4dp"/>
+        android:elevation="3dp"/>
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"

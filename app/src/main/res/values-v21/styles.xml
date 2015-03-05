@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="DrawerActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#2196F3</item>
-        <!--<item name="colorPrimaryDark">#1565C0</item>-->
+        <item name="colorPrimary">@color/ms_primary</item>
 
         <item name="windowActionModeOverlay">true</item>
 

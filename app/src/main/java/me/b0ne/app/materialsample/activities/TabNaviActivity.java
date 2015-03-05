@@ -33,7 +33,7 @@ public class TabNaviActivity extends ActionBarActivity {
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Tab Navigation");
+        actionBar.setTitle("PagerSlidingTabStrip");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         tabs = (PagerSlidingTabStrip)findViewById(R.id.tabs);
