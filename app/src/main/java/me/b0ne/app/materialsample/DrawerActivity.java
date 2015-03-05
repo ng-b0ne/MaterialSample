@@ -21,7 +21,13 @@ public class DrawerActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drawer);
+
+        int type = getIntent().getIntExtra("type", 0);
+        if (type == 1) {
+            setContentView(R.layout.activity_drawer1);
+        } else {
+            setContentView(R.layout.activity_drawer2);
+        }
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

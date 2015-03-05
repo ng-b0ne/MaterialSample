@@ -2,7 +2,6 @@ package me.b0ne.app.materialsample;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -13,7 +12,8 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button btnDrawerActivity;
+    private Button btnDrawerActivity1;
+    private Button btnDrawerActivity2;
     private Button btnTabNaviActivity;
 
     @Override
@@ -23,15 +23,24 @@ public class MainActivity extends ActionBarActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-//        actionBar.setDisplayHomeAsUpEnabled(true);
-//        actionBar.setHomeButtonEnabled(true);
+//        ActionBar actionBar = getSupportActionBar();
 
-        btnDrawerActivity = (Button)findViewById(R.id.btn_drawer_activity);
-        btnDrawerActivity.setOnClickListener(new View.OnClickListener() {
+        btnDrawerActivity1 = (Button)findViewById(R.id.btn_drawer_activity1);
+        btnDrawerActivity1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), DrawerActivity.class));
+                Intent intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                intent.putExtra("type", 1);
+                startActivity(intent);
+            }
+        });
+        btnDrawerActivity2 = (Button)findViewById(R.id.btn_drawer_activity2);
+        btnDrawerActivity2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                intent.putExtra("type", 2);
+                startActivity(intent);
             }
         });
         btnTabNaviActivity = (Button)findViewById(R.id.btn_tab_navi_activity);

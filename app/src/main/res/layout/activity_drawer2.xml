@@ -17,12 +17,8 @@
             android:minHeight="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:paddingTop="@dimen/status_bar_height"
-            android:elevation="4dp"/>
+            app:elevation="4dp"/>
         <!-- main content -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello ...."/>
         <FrameLayout
             android:id="@+id/main_content_frame"
             android:layout_width="match_parent"
