@@ -7,14 +7,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button btnDrawerActivity1;
-    private Button btnDrawerActivity2;
-    private Button btnTabNaviActivity;
+    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,32 +24,37 @@ public class MainActivity extends ActionBarActivity {
         setSupportActionBar(toolbar);
 //        ActionBar actionBar = getSupportActionBar();
 
-        btnDrawerActivity1 = (Button)findViewById(R.id.btn_drawer_activity1);
-        btnDrawerActivity1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), DrawerActivity.class);
-                intent.putExtra("type", 1);
-                startActivity(intent);
-            }
-        });
-        btnDrawerActivity2 = (Button)findViewById(R.id.btn_drawer_activity2);
-        btnDrawerActivity2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), DrawerActivity.class);
-                intent.putExtra("type", 2);
-                startActivity(intent);
-            }
-        });
-        btnTabNaviActivity = (Button)findViewById(R.id.btn_tab_navi_activity);
-        btnTabNaviActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), TabNaviActivity.class));
-            }
-        });
+        mListView = (ListView)findViewById(R.id.list_view);
+        String[] items = getResources().getStringArray(R.array.main_item_list);
+        MainListAdapter adapter = new MainListAdapter(this, items);
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(onListClick);
     }
+
+    private AdapterView.OnItemClickListener onListClick = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Intent intent = new Intent();
+            switch (position) {
+                case 0:
+                    intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                    intent.putExtra("type", 1);
+                    break;
+                case 1:
+                    intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                    intent.putExtra("type", 2);
+                    break;
+                case 2:
+                    intent = new Intent(getApplicationContext(), TabNaviActivity.class);
+                    break;
+                case 3:
+                    return;
+            }
+            startActivity(intent);
+        }
+    };
+
 
 
     @Override

@@ -17,33 +17,12 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="15dp">
-        <Button
-            android:id="@+id/btn_drawer_activity1"
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DrawerActivity1"
-            />
-        <Button
-            android:id="@+id/btn_drawer_activity2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DrawerActivity2"
-            />
-
-        <Button
-            android:id="@+id/btn_tab_navi_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TabNavigation" />
-
-        <Button
-            android:id="@+id/btn_unn_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="__Activity"
-            />
+            android:fadingEdge="none"/>
     </LinearLayout>
 
 </LinearLayout>
