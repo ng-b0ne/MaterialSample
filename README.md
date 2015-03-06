@@ -3,6 +3,9 @@ This is sample Android application for Material Design.
 ![MaterialSample Screen Shot](images/ss-01.png)
 ![MaterialSample Screen Shot](images/ss-02.png)
 ![MaterialSample Screen Shot](images/ss-03.png)
+![MaterialSample Screen Shot](images/ss-04.png)
+![MaterialSample Screen Shot](images/ss-05.png)
+![MaterialSample Screen Shot](images/ss-06.png)
 
 # Google Play Store
 Try out the sample application [on the Play Store](https://play.google.com/store/apps/details?id=me.b0ne.app.materialsample).  
@@ -10,7 +13,7 @@ Try out the sample application [on the Play Store](https://play.google.com/store
 # Libraries used
 * [jpardogo / PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip)
 * [makovkastar / FloatingActionButton](https://github.com/makovkastar/FloatingActionButton)
-* [ksoichiro/Android-ObservableScrollView](https://github.com/ksoichiro/Android-ObservableScrollView)
+* [ksoichiro / Android-ObservableScrollView](https://github.com/ksoichiro/Android-ObservableScrollView)
 
 # License
 
