@@ -57,6 +57,9 @@ public class MainActivity extends ActionBarActivity {
                 case 4:
                     intent = new Intent(getApplicationContext(), ParallaxToolbarScrollviewActivity.class);
                     break;
+                case 5:
+                    intent = new Intent(getApplicationContext(), CardViewActivity.class);
+                    break;
             }
             startActivity(intent);
         }
