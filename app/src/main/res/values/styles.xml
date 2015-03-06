@@ -13,4 +13,8 @@
 
     </style>
 
+    <style name="ThemeTranslucentsStatus" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
 </resources>

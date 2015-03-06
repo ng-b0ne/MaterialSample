@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="parallax_image_height">220dp</dimen>
 </resources>

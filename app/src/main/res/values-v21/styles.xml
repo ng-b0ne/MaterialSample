@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="DrawerActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="DrawerActivityTheme" parent="ThemeTranslucentsStatus">
         <item name="colorPrimary">@color/ms_primary</item>
 
-        <item name="windowActionModeOverlay">true</item>
 
         <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
         <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="ThemeTranslucentsStatus" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 </resources>

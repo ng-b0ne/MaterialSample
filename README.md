@@ -7,6 +7,7 @@ Try out the sample application [on the Play Store](https://play.google.com/store
 # Libraries used
 * [jpardogo / PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip)
 * [makovkastar / FloatingActionButton](https://github.com/makovkastar/FloatingActionButton)
+* [ksoichiro/Android-ObservableScrollView](https://github.com/ksoichiro/Android-ObservableScrollView)
 
 # License
 

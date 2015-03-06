@@ -22,7 +22,9 @@
             android:name=".activities.DrawerActivity" />
         <activity android:name=".activities.TabNaviActivity" />
         <activity android:name=".activities.FABActivity"/>
-        <activity android:name=".activities.ParallaxToolbarScrollviewActivity"/>
+        <activity
+            android:theme="@style/ThemeTranslucentsStatus"
+            android:name=".activities.ParallaxToolbarScrollviewActivity"/>
     </application>
 
 </manifest>
