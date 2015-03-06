@@ -1,5 +1,8 @@
 # Sample Android App for Material Design
-This is sample Android application for Material Design.
+This is sample Android application for Material Design.  
+![MaterialSample Screen Shot](MaterialSample/images/ss-01.png)
+![MaterialSample Screen Shot](MaterialSample/images/ss-02.png)
+![MaterialSample Screen Shot](MaterialSample/images/ss-03.png)
 
 # Google Play Store
 Try out the sample application [on the Play Store](https://play.google.com/store/apps/details?id=me.b0ne.app.materialsample).  
