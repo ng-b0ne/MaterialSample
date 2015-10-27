@@ -1,5 +1,6 @@
 package me.b0ne.app.materialsample.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -36,27 +37,31 @@ public class MainActivity extends AppCompatActivity {
     private AdapterView.OnItemClickListener onListClick = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Context context = getApplicationContext();
             Intent intent = new Intent();
             switch (position) {
                 case 0:
-                    intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                    intent = new Intent(context, DrawerActivity.class);
                     intent.putExtra("type", 1);
                     break;
                 case 1:
-                    intent = new Intent(getApplicationContext(), DrawerActivity.class);
+                    intent = new Intent(context, DrawerActivity.class);
                     intent.putExtra("type", 2);
                     break;
                 case 2:
-                    intent = new Intent(getApplicationContext(), TabNaviActivity.class);
+                    intent = new Intent(context, TabNaviActivity.class);
                     break;
                 case 3:
-                    intent = new Intent(getApplicationContext(), FABActivity.class);
+                    intent = new Intent(context, FABActivity.class);
                     break;
                 case 4:
-                    intent = new Intent(getApplicationContext(), ParallaxToolbarScrollviewActivity.class);
+                    intent = new Intent(context, ParallaxToolbarScrollviewActivity.class);
                     break;
                 case 5:
-                    intent = new Intent(getApplicationContext(), CardViewActivity.class);
+                    intent = new Intent(context, CardViewActivity.class);
+                    break;
+                case 6:
+                    intent = new Intent(context, AppBarSampleActivity.class);
                     break;
             }
             startActivity(intent);
