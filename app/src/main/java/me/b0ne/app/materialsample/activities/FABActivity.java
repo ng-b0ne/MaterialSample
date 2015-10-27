@@ -2,7 +2,7 @@ package me.b0ne.app.materialsample.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -15,7 +15,7 @@ import me.b0ne.app.materialsample.adapters.MainListAdapter;
 /**
  * Created by b0ne on 2015/03/05.
  */
-public class FABActivity extends ActionBarActivity {
+public class FABActivity extends AppCompatActivity {
 
     private ListView mListView;
     private FloatingActionButton mFab;

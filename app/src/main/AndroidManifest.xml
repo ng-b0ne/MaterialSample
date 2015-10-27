@@ -26,6 +26,7 @@
             android:theme="@style/ThemeTranslucentsStatus"
             android:name=".activities.ParallaxToolbarScrollviewActivity"/>
         <activity android:name=".activities.CardViewActivity" />
+        <activity android:name=".activities.AppBarSampleActivity" />
     </application>
 
 </manifest>

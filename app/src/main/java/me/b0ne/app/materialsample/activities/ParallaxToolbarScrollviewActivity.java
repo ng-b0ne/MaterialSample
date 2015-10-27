@@ -3,7 +3,7 @@ package me.b0ne.app.materialsample.activities;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,7 +19,7 @@ import me.b0ne.app.materialsample.R;
 /**
  * Created by b0ne on 2015/03/06.
  */
-public class ParallaxToolbarScrollviewActivity extends ActionBarActivity implements ObservableScrollViewCallbacks {
+public class ParallaxToolbarScrollviewActivity extends AppCompatActivity implements ObservableScrollViewCallbacks {
 
     private View mImageView;
     private View mToolbarView;

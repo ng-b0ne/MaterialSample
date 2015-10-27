@@ -2,7 +2,7 @@ package me.b0ne.app.materialsample.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
@@ -11,7 +11,7 @@ import me.b0ne.app.materialsample.R;
 /**
  * Created by b0ne on 2015/03/06.
  */
-public class CardViewActivity extends ActionBarActivity {
+public class CardViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
